@@ -12,7 +12,7 @@ function findOrAdd(root, newNode){
   let current = root;
   if (current.data === newNode.data) {
     return true
-  } else if (newNode < current) {
+  } else if (newNode.data < current.data) {
     current = current.left
   } else {
 
