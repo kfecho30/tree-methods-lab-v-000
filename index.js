@@ -38,5 +38,5 @@ function max(node) {
 }
 
 function min(node) {
- node.left ? return min(node.left) : return node
+ return node.left ? min(node.left) : node
 }
