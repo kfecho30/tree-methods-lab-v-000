@@ -10,8 +10,12 @@ function inOrder(currentNode){
 
 function findOrAdd(root, newNode){
   let current = root;
-  if (current === newNode) {
+  if (current.data === newNode.data) {
     return true
+  } else if (newNode < current) {
+    current = current.left
+  } else {
+
   }
 }
 
