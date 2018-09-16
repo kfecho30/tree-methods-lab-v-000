@@ -33,6 +33,6 @@ function max(node) {
 
 }
 
-function min(tree) {
- tree.left ? min(tree.left) : tree
+function min(node) {
+ node.left ? min(tree.node) : tree
 }
