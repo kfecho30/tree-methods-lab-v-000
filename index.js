@@ -30,7 +30,11 @@ function findOrAdd(root, newNode){
 }
 
 function max(node) {
-  node.right ? max(node.right) : node
+  if(currentNode.right){
+    return max(currentNode.right)
+  } else {
+    return currentNode;
+  }
 }
 
 function min(node) {
