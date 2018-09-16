@@ -20,5 +20,5 @@ function max(tree) {
 }
 
 function min(tree) {
-  
+
 }
