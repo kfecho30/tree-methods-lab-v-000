@@ -9,5 +9,13 @@ function inOrder(currentNode){
 }
 
 function findOrAdd(newNode){
+
+}
+
+function max(tree) {
+
+}
+
+function min(tree) {
   
 }
