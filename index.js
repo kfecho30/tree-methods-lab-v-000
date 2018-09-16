@@ -16,13 +16,7 @@ function findOrAdd(root, newNode){
     return root.left ? findOrAdd(root.left, newNode) : root.left = newNode
   }
   else {
-    if(root.right) {
-      return findOrAdd(root.right, newNode)
-    }
-    else {
-      return root.right = newNode
-    }
-  }
+    return root.right ? findOrAdd(root.right, newNode) : root.right = newNode
 }
 
 function max(node) {
