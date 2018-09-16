@@ -13,14 +13,14 @@ function findOrAdd(root, newNode){
     return true
   }
   else if (newNode.data < root.data) {
-    if(root) {
+    if(root.left) {
       findOrAdd(root.left, newNode)
     } else {
       root.left = newNode
     }
   }
   else {
-    if(root) {
+    if(root.right) {
       findOrAdd(root.right, newNode)
     }
     else {
