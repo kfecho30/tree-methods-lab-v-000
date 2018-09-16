@@ -9,20 +9,21 @@ function inOrder(currentNode){
 }
 
 function findOrAdd(root, newNode){
-  let current = root;
-  if (newNode.data === current.data) {
+  if (newNode.data === root.data) {
     return true
-  } else if (newNode.data < root.data) {
-    current = current.left
-    if(current) {
-      findOrAdd(current, newNode)
+  }
+  else if (newNode.data < root.data) {
+    root = root.left
+    if(root) {
+      findOrAdd(root, newNode)
     } else {
       root.left = newNode
     }
-  } else {
-    current = current.right
-    if(current) {
-      findOrAdd(current, newNode)
+  }
+  else {
+    root = root.right
+    if(root) {
+      findOrAdd(root, newNode)
     }
     else {
       root.right = newNode
@@ -30,7 +31,7 @@ function findOrAdd(root, newNode){
   }
 }
 
-function max(tree) {
+function max(node) {
 
 }
 
