@@ -8,8 +8,11 @@ function inOrder(currentNode){
   }
 }
 
-function findOrAdd(newNode){
-
+function findOrAdd(root, newNode){
+  let current = root;
+  if (current === newNode) {
+    return true
+  }
 }
 
 function max(tree) {
